@@ -1,0 +1,50 @@
+# ==============================================================================
+# THREADTALES Atelier — Project Requirements & System Dependencies
+# ==============================================================================
+# Stack: Node.js (v18+), React (v19), Vite (v8), TailwindCSS (v4), Express (v4), Supabase, Groq AI RAG, Brevo Email API
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. System & Runtime Environment Prerequisites
+# ------------------------------------------------------------------------------
+node>=18.0.0
+npm>=9.0.0
+
+# ------------------------------------------------------------------------------
+# 2. Frontend Web Application Dependencies (React / Vite / Tailwind)
+# ------------------------------------------------------------------------------
+react==19.2.8
+react-dom==19.2.8
+react-router-dom==7.18.4
+lucide-react==1.47.0
+@supabase/supabase-js==2.116.0
+@supabase/ssr==0.12.7
+vite==8.3.0
+@vitejs/plugin-react==6.1.1
+tailwindcss==4.3.3
+@tailwindcss/vite==4.3.3
+oxlint==1.81.0
+@types/react==19.2.18
+@types/react-dom==19.2.7
+
+# ------------------------------------------------------------------------------
+# 3. Backend Server Dependencies (Express / Node.js)
+# ------------------------------------------------------------------------------
+express==4.21.2
+cors==2.8.5
+dotenv==16.4.7
+groq-sdk==1.6.0
+@supabase/supabase-js==2.49.1
+
+# ------------------------------------------------------------------------------
+# 4. Environment Variables Configuration Instructions (.env)
+# ------------------------------------------------------------------------------
+# VITE_SUPABASE_URL=<Paste your Supabase Project URL here>
+# VITE_SUPABASE_PUBLISHABLE_KEY=<Paste your Supabase Publishable Key here>
+# PORT=<Paste your Express Server Port here, e.g. 5000>
+# BREVO_API_KEY=<Paste your Brevo API Key here for OTP email sending>
+# BREVO_SENDER_EMAIL=<Paste your Brevo Verified Sender Email here>
+# BREVO_SENDER_NAME=<Paste your Sender Name here, e.g. THREADTALES Atelier>
+# GROQ_API_KEY=<Paste your Groq API Key here for AI Assistant>
+# GROQ_MODEL=<Paste your Groq Model ID here, e.g. llama-3.3-70b-versatile>
+# ==============================================================================

@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-very-light: #FFF7F9;
+    --cream: #FFFDFB;
+    --baby-pink: #F7C9D5;
+    --light-pink: #EBA3B7;
+    --medium-pink: #C65A7B;
+    --dark-pink: #9D3158;
+    --deep-burgundy-pink: #70213F;
+    --dark-text: #301B25;
+  }
+
+  body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--bg-very-light);
+    color: var(--dark-text);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-serif-luxury {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+/* Custom Utilities & Animations */
+.tracking-luxury-wide {
+  letter-spacing: 0.35em;
+}
+
+.tracking-luxury-medium {
+  letter-spacing: 0.18em;
+}
+
+/* Subtle crochet stitch lines pattern for background */
+.crochet-bg-pattern {
+  background-image: radial-gradient(circle at 1px 1px, rgba(157, 49, 88, 0.04) 1px, transparent 0);
+  background-size: 32px 32px;
+}
+
+/* Floating Yarn Ball Soft Motion */
+@keyframes yarnfloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+.animate-yarn-float {
+  animation: yarnfloat 8s ease-in-out infinite;
+}
+
+/* Smooth Thread Draw Animation */
+@keyframes threadDraw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-thread-draw {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: threadDraw 3.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7C9D5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C65A7B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9D3158;
+}
