@@ -54,5 +54,5 @@ try {
 
 // Start Server
 app.listen(PORT, () => {
-  console.log(`✨ THREADTALES Backend Server listening on http://localhost:${PORT}`);
+  console.log(`✨ THREADTALES Backend Server listening on https://threadtales-27nj.onrender.com`);
 });
